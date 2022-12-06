@@ -173,6 +173,7 @@ section {
   color: #ffffff;
 
   display: block;
+  text-transform: capitalize;
 }
 
 .hero-text-container {
