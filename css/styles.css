@@ -6,7 +6,6 @@
   --logo-studio-color: #2e2f42;
 }
 
-
 h1,
 h2,
 h3,
@@ -42,22 +41,35 @@ body {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ========HEADER========== */
 
-.header-border{
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+.list-nav .link.nav,
+.list-contacts .link.contacts {
+  padding: 24px 0px;
+}
+
+.header-border {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container.header {
   display: flex;
   min-height: 72px;
-   
 }
 
 .logo {
@@ -87,6 +99,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--nav-link-text-color);
+  padding: 24px 0px;
 }
 
 .list.list-nav li:not(:first-child) {
@@ -97,7 +110,8 @@ body {
   margin-left: 77px;
 }
 
-.link.nav {
+.link.nav,
+.link.contacts {
   display: block;
 }
 
@@ -123,6 +137,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contacts-text-color);
+  padding: 24px 0;
 }
 
 .contacts:hover,
@@ -133,12 +148,21 @@ body {
   color: var(--contacts-text-hover-color);
 }
 
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ================= BODY ============ */
 
 .hero-section {
   background-color: #2e2f42;
   text-align: center;
+}
 
+.section.hero-section {
+  padding-top: 192px;
+  padding-bottom: 192px;
 }
 
 .hero-text {
@@ -148,8 +172,14 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
 
-  padding-top: 192px;
   display: block;
+}
+
+.hero-text-container {
+  width: 492px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -163,9 +193,9 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
 
-  margin-top: 48px;
-  margin-bottom: 192px;
   display: inline-block;
+  margin-top: 48px;
+  padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -182,27 +212,16 @@ body {
 
 /* =================== Section 2 ==================================*/
 
-.section.container {
-  padding-top: 120px;
-}
-
 .header-section-hidden {
   display: none;
 }
 
-
-.list.section li:not(:last-child) {
+.list.cards li:not(:last-child) {
   margin-right: 24px;
 }
 
-
-.list.section {
+.list.cards {
   display: flex;
-}
-
-.container-section-3 {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 h2 {
@@ -219,13 +238,12 @@ h2 {
 }
 
 .header-section {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
-.list.section img {
+.list.cards img {
   display: block;
 }
-
 
 .item-heading {
   font-weight: 600;
@@ -235,18 +253,28 @@ h2 {
   color: #2e2f42;
 }
 
+.section.container-section-3 {
+  padding-top: 0px;
+}
+
+.list.cards img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===============================Team============================ */
 
 .team-subscription-item {
-padding: 32px 15px;
-text-align: center;
+  padding: 32px 15px;
+  text-align: center;
 }
 
 .subscription {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .section-team {
@@ -254,9 +282,10 @@ text-align: center;
 }
 
 .team-card {
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .button-portfolio {
@@ -269,6 +298,11 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
+  padding: 12px 24px;
+}
+
+.button-portfolio-margin:not(:last-child) {
+  margin-right: 24px;
 }
 
 .button-portfolio:hover,
@@ -288,14 +322,13 @@ border-radius: 0px 0px 4px 4px;
 
 /* ================================Page products===================== */
 
-.list.container.button-products {
+.section.section-products {
   padding-top: 96px;
-  padding-bottom: 72px;
-  justify-content: center;
 }
 
-.container .products-grid {
-  padding-bottom: 120px;
+.list.button-products {
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .products-grid {
@@ -306,7 +339,7 @@ border-radius: 0px 0px 4px 4px;
   margin-right: 24px;
 }
 
-.products-grid li:not(:nth-last-child(-n+3)) {
+.products-grid li:not(:nth-last-child(-n + 3)) {
   margin-bottom: 48px;
 }
 
@@ -315,20 +348,22 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .product-card {
-  border-bottom: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .product-card:hover {
-  border-bottom: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-bottom: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 /* ===========FOOTER============== */
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
@@ -336,9 +371,14 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
-  padding-top: 18px;
+  margin-top: 18px;
 }
 
 .container-footer {
-  padding: 100px 0px;
+  display: block;
+}
+
+.footer-subscription-container {
+  width: 264px;
+  height: auto;
 }
